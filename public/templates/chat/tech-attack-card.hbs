@@ -8,7 +8,7 @@
   </div>
   <div class="card clipped">
     <div class="lancer-mini-header collapse-trigger" data-collapse-id="{{_uuid}}-attacks">
-      {{localize "lancer.chat-card.title.attack"}}
+      {{localize "beacon.chat-card.title.attack"}}
     </div>
     {{#each attacks as |attack key|}}
       <div
@@ -30,7 +30,7 @@
   </div>
   {{#if hits}}
   <div class="card clipped">
-    <div class="lancer-mini-header collapse-trigger" data-collapse-id="{{_uuid}}-hits">{{localize "lancer.chat-card.title.e-defense-hit"}}</div>
+    <div class="lancer-mini-header collapse-trigger" data-collapse-id="{{_uuid}}-hits">{{localize "beacon.chat-card.title.e-defense-hit"}}</div>
     {{#each hits as |hit key|}}
     <div class="lancer-hit collapse" data-collapse-id="{{../_uuid}}-hits">
       <div>
@@ -39,11 +39,11 @@
       <div class="lancer-hit-text">
         <span class="lancer-hit-text-name">{{hit.token.name}}</span>
         {{#if hit.crit}}
-        <span class="card clipped lancer-hit-chip crit">{{localize "lancer.chat-card.attack.crit" total=hit.total}}</span>
+        <span class="card clipped lancer-hit-chip crit">{{localize "beacon.chat-card.attack.crit" total=hit.total}}</span>
         {{else}}{{#if hit.hit}}
-        <span class="card clipped lancer-hit-chip hit">{{localize "lancer.chat-card.attack.hit" total=hit.total}}</span>
+        <span class="card clipped lancer-hit-chip hit">{{localize "beacon.chat-card.attack.hit" total=hit.total}}</span>
         {{else}}
-        <span class="card clipped lancer-hit-chip miss">{{localize "lancer.chat-card.attack.miss" total=hit.total}}</span>
+        <span class="card clipped lancer-hit-chip miss">{{localize "beacon.chat-card.attack.miss" total=hit.total}}</span>
         {{/if}}{{/if}}
       </div>
     </div>
@@ -51,7 +51,7 @@
   </div>
   {{/if}} {{#if effect}}
   <div class="card clipped">
-    <div class="lancer-mini-header collapse-trigger" data-collapse-id="{{_uuid}}-effect">{{localize "lancer.chat-card.title.effect"}}</div>
+    <div class="lancer-mini-header collapse-trigger" data-collapse-id="{{_uuid}}-effect">{{localize "beacon.chat-card.title.effect"}}</div>
     <span class="effect-text collapse" data-collapse-id="{{_uuid}}-effect">{{{effect}}}</span>
   </div>
   {{/if}}

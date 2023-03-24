@@ -1089,9 +1089,9 @@ export function buildActionHTML(
       detailText = `
         <div class="action-detail collapse ${options.full ? "" : "collapsed"}" data-collapse-id="${collID}">
           <hr class="hsep">
-          <div class="overline">${game.i18n.localize("lancer.chat-card.label.trigger")}</div> 
+          <div class="overline">${game.i18n.localize("beacon.chat-card.label.trigger")}</div> 
           <div>${action.Trigger}</div>
-          <div class="overline">${game.i18n.localize("lancer.chat-card.label.effect")}</div> 
+          <div class="overline">${game.i18n.localize("beacon.chat-card.label.effect")}</div> 
           <div>${action.Detail}</div> 
         </div>`;
     }

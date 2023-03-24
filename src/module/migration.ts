@@ -278,7 +278,7 @@ export const scorchedEarthCompendiums = async () => {
           path: `packs/${id}.db`,
           private: false,
           type: type,
-          system: "lancer",
+          system: "beacon",
           package: "world",
         });
       }

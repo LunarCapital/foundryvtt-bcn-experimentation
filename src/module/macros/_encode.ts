@@ -62,6 +62,6 @@ export async function runEncodedMacro(el: HTMLElement | LancerMacroData) {
     return;
   }
 
-  let fn = game.lancer[data.fn];
+  let fn = game.beacon[data.fn];
   return (fn as Function).apply(null, data.args);
 }

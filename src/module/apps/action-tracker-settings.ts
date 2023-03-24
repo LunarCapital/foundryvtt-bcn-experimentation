@@ -10,7 +10,7 @@ export class ActionTrackerConfig extends FormApplication<FormApplication.Options
   static get defaultOptions(): FormApplication.Options {
     return {
       ...super.defaultOptions,
-      title: "lancer.actionTracker.menu-label",
+      title: "beacon.actionTracker.menu-label",
       id: "lancer-actionTracker-settings",
       template: `systems/${game.system.id}/templates/window/actiontracker-config.hbs`,
       width: 350,

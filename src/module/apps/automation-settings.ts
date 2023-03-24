@@ -10,7 +10,7 @@ export class AutomationConfig extends FormApplication<FormApplication.Options, A
   static get defaultOptions(): FormApplication.Options {
     return {
       ...super.defaultOptions,
-      title: "lancer.automation.menu-label",
+      title: "beacon.automation.menu-label",
       id: "lancer-automation-settings",
       template: `systems/${game.system.id}/templates/window/automation-config.hbs`,
       width: 350,

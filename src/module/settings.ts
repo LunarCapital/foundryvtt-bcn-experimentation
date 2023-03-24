@@ -46,18 +46,18 @@ export const registerSettings = function () {
   });
 
   game.settings.registerMenu(game.system.id, "AutomationMenu", {
-    name: "lancer.automation.menu-name",
-    label: "lancer.automation.menu-label",
-    hint: "lancer.automation.menu-hint",
+    name: "beacon.automation.menu-name",
+    label: "beacon.automation.menu-label",
+    hint: "beacon.automation.menu-hint",
     icon: "mdi mdi-state-machine",
     type: AutomationConfig,
     restricted: true,
   });
 
   game.settings.registerMenu(game.system.id, "ActionTrackerMenu", {
-    name: "lancer.actionTracker.menu-name",
-    label: "lancer.actionTracker.menu-label",
-    hint: "lancer.actionTracker.menu-hint",
+    name: "beacon.actionTracker.menu-name",
+    label: "beacon.actionTracker.menu-label",
+    hint: "beacon.actionTracker.menu-hint",
     icon: "mdi mdi-state-machine",
     type: ActionTrackerConfig,
     restricted: true,
@@ -81,16 +81,16 @@ export const registerSettings = function () {
   });
 
   game.settings.register(game.system.id, LANCER.setting_square_grid_diagonals, {
-    name: "lancer.squaregriddiagonals.name",
-    hint: "lancer.squaregriddiagonals.hint",
+    name: "beacon.squaregriddiagonals.name",
+    hint: "beacon.squaregriddiagonals.hint",
     scope: "world",
     config: true,
     type: String,
     choices: {
-      "111": "lancer.squaregriddiagonals.111",
-      "121": "lancer.squaregriddiagonals.121",
-      "222": "lancer.squaregriddiagonals.222",
-      euc: "lancer.squaregriddiagonals.euc",
+      "111": "beacon.squaregriddiagonals.111",
+      "121": "beacon.squaregriddiagonals.121",
+      "222": "beacon.squaregriddiagonals.222",
+      euc: "beacon.squaregriddiagonals.euc",
     },
     default: "111",
   });

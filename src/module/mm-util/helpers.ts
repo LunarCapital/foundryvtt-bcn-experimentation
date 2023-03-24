@@ -274,7 +274,7 @@ export async function get_pack(
       //@ts-ignore - entity property deprecated, v9 uses type instead.
       type: entity_type,
       label: friendly_entrytype_name(type),
-      system: "lancer",
+      system: "beacon",
       package: "world",
       path: `./packs/${type}.db`,
       private: false,
