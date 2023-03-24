@@ -71,7 +71,10 @@ export function stat_view_card(
   data_path: string,
   options: HelperOptions & { rollable?: boolean }
 ): string {
-  let data_val = resolve_helper_dotpath(options, data_path);
+  let data_val =
+    data_path === "mm.Grit"
+      ? Math.floor((resolve_helper_dotpath(options, "mm.Level") as number) / 2)
+      : resolve_helper_dotpath(options, data_path); //TODO clean this up eventually when mm removed
   let macro_button: string | undefined;
   let macroData = encodeMacroData({
     title: title,

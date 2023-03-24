@@ -13,9 +13,9 @@
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="lancer-tabs" data-group="primary">
-      <a class="item lancer-tab medium" data-tab="stats">{{localize "lancer.mech-sheet.tabs.stats"}}</a>
-      <a class="item lancer-tab medium" data-tab="loadout">{{localize "lancer.mech-sheet.tabs.loadout"}}</a>
-      <a class="item lancer-tab medium" data-tab="talents">{{localize "lancer.mech-sheet.tabs.talents"}}</a>
+      <a class="item lancer-tab medium" data-tab="stats">{{localize "beacon.mech-sheet.tabs.stats"}}</a>
+      <a class="item lancer-tab medium" data-tab="loadout">{{localize "beacon.mech-sheet.tabs.loadout"}}</a>
+      <a class="item lancer-tab medium" data-tab="talents">{{localize "beacon.mech-sheet.tabs.talents"}}</a>
     </nav>
   </div>
 
@@ -48,7 +48,7 @@
         <div class="flexcol card clipped">
           <div class="lancer-header">
             <span class="major">
-              {{localize "lancer.mech-sheet.core.label"}}
+              {{localize "beacon.mech-sheet.core.label"}}
             </span>
           </div>
           <div class="flexrow stat-container">
@@ -72,7 +72,7 @@
       <div class="pilot-frame-wrapper flexrow">
         <div class="card">
           <span class="lancer-header submajor clipped-top">
-            {{localize "lancer.mech-sheet.macros.label" }}
+            {{localize "beacon.mech-sheet.macros.label" }}
           </span>
           <div class="lancer-macro-grid">
             {{{macro-button "STABILIZE" "stabilizeMacro" "mm" }}}
@@ -85,7 +85,7 @@
         {{#if (is-combatant actor)}}
         <div style="min-width:560px" class="card">
           <span class="lancer-header submajor clipped-top">
-            {{localize "lancer.mech-sheet.actions.label"}}
+            {{localize "beacon.mech-sheet.actions.label"}}
           </span>
           <div class="lancer-action-grid">
             {{{action-button "Protocol" "system.action_tracker.protocol" "protocol"}}}
@@ -110,7 +110,7 @@
       </div>
       <div class="card">
         <span class="lancer-header major">
-          {{localize "lancer.mech-sheet.system.label" total=mm.Loadout.TotalSP max=mm.MaxSP}}
+          {{localize "beacon.mech-sheet.system.label" total=mm.Loadout.TotalSP max=mm.MaxSP}}
         </span>
         {{{mech-loadout "mm"}}}
       </div>
@@ -119,7 +119,7 @@
     <div class="tab talents" data-group="primary" data-tab="talents">
       {{!-- Talents --}}
       <div class="card clipped">
-        <h2 class="lancer-title clipped">{{localize "lancer.pilot-sheet.abilities.talents"}}</h2>
+        <h2 class="lancer-title clipped">{{localize "beacon.pilot-sheet.abilities.talents"}}</h2>
         {{#each mm.Pilot.Talents as |skill index|}}
         {{{ref-mm-controllable-item (concat "mm.Pilot.Talents." index) ""}}}
         {{/each}}

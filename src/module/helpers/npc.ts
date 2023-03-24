@@ -14,18 +14,18 @@ import { limited_uses_indicator, ref_params } from "./refs";
 import { compact_tag_list } from "./tags";
 
 export const EffectIcons = {
-  Generic: `systems/foundryvtt-bcn-experimentation/assets/icons/generic_item.svg`,
-  Basic: `systems/foundryvtt-bcn-experimentation/assets/icons/generic_item.svg`,
-  Charge: `systems/foundryvtt-bcn-experimentation/assets/icons/mine.svg`,
-  Deployable: `systems/foundryvtt-bcn-experimentation/assets/icons/deployable.svg`,
-  AI: `systems/foundryvtt-bcn-experimentation/assets/icons/mech_system.svg`,
-  Protocol: `systems/foundryvtt-bcn-experimentation/assets/icons/protocol.svg`,
-  Reaction: `systems/foundryvtt-bcn-experimentation/assets/icons/reaction.svg`,
-  Tech: `systems/foundryvtt-bcn-experimentation/assets/icons/tech_quick.svg`,
-  Drone: `systems/foundryvtt-bcn-experimentation/assets/icons/drone.svg`,
-  Bonus: `systems/foundryvtt-bcn-experimentation/assets/icons/shape_polygon_plus.svg`,
-  Offensive: `systems/foundryvtt-bcn-experimentation/assets/icons/sword_array.svg`,
-  Profile: `systems/foundryvtt-bcn-experimentation/assets/icons/weapon_profile.svg`,
+  Generic: `systems/beacon/assets/icons/generic_item.svg`,
+  Basic: `systems/beacon/assets/icons/generic_item.svg`,
+  Charge: `systems/beacon/assets/icons/mine.svg`,
+  Deployable: `systems/beacon/assets/icons/deployable.svg`,
+  AI: `systems/beacon/assets/icons/mech_system.svg`,
+  Protocol: `systems/beacon/assets/icons/protocol.svg`,
+  Reaction: `systems/beacon/assets/icons/reaction.svg`,
+  Tech: `systems/beacon/assets/icons/tech_quick.svg`,
+  Drone: `systems/beacon/assets/icons/drone.svg`,
+  Bonus: `systems/beacon/assets/icons/shape_polygon_plus.svg`,
+  Offensive: `systems/beacon/assets/icons/sword_array.svg`,
+  Profile: `systems/beacon/assets/icons/weapon_profile.svg`,
 };
 
 /* ------------------------------------ */

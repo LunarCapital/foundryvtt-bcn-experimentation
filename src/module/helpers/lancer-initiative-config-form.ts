@@ -3,7 +3,7 @@ type Appearance = NonNullable<typeof CONFIG.LancerInitiative.def_appearance>;
 
 export class LancerCombatTrackerConfig extends CombatTrackerConfig<
   FormApplication.Options,
-  ClientSettings.Values["lancer.combatTrackerConfig"]
+  ClientSettings.Values["beacon.combatTrackerConfig"]
 > {
   static get defaultOptions(): FormApplication.Options {
     return {
@@ -24,7 +24,7 @@ export class LancerCombatTrackerConfig extends CombatTrackerConfig<
 
   async _updateObject(
     event: Event,
-    formData: ClientSettings.Values["lancer.combatTrackerConfig"]
+    formData: ClientSettings.Values["beacon.combatTrackerConfig"]
   ): Promise<ClientSettings.Values["core.combatTrackerConfig"]> {
     let res = await super._updateObject(event, formData);
     console.log(formData);

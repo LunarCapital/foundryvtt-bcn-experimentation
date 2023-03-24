@@ -6,13 +6,13 @@ const path = require("path");
 
 const config: UserConfig = {
   root: "src/",
-  base: "/systems/foundryvtt-bcn-experimentation/",
+  base: "/systems/beacon/",
   publicDir: path.resolve(__dirname, "public"),
   server: {
     port: 30001,
     open: true,
     proxy: {
-      "^(?!/systems/lancer)": "http://localhost:30000/",
+      "^(?!/systems/beacon)": "http://localhost:30000/",
       "/socket.io": {
         target: "ws://localhost:30000",
         ws: true,
@@ -34,7 +34,7 @@ const config: UserConfig = {
   build: {
     outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
-    sourcemap: true,
+    sourcemap: false,
     brotliSize: true,
     terserOptions: {
       mangle: false,

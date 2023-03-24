@@ -183,7 +183,7 @@ Hooks.once("init", async function () {
 
   // Assign custom classes and constants here
   // Create a Lancer namespace within the game global
-  game.lancer = {
+  game.beacon = {
     applications: {
       LancerPilotSheet,
       LancerNPCSheet,

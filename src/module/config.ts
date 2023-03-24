@@ -37,92 +37,92 @@ export const STATUSES = [
   {
     id: "immobilized",
     label: "Immobilized",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/condition_immobilized.svg`,
+    icon: `systems/beacon/assets/icons/white/condition_immobilized.svg`,
   },
   {
     id: "impaired",
     label: "Impaired",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/condition_impaired.svg`,
+    icon: `systems/beacon/assets/icons/white/condition_impaired.svg`,
   },
   {
     id: "jammed",
     label: "Jammed",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/condition_jammed.svg`,
+    icon: `systems/beacon/assets/icons/white/condition_jammed.svg`,
   },
   {
     id: "lockon",
     label: "Lock On",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/condition_lockon.svg`,
+    icon: `systems/beacon/assets/icons/white/condition_lockon.svg`,
   },
   {
     id: "shredded",
     label: "Shredded",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/condition_shredded.svg`,
+    icon: `systems/beacon/assets/icons/white/condition_shredded.svg`,
   },
   {
     id: "slowed",
     label: "Slowed",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/condition_slow.svg`,
+    icon: `systems/beacon/assets/icons/white/condition_slow.svg`,
   },
   {
     id: "stunned",
     label: "Stunned",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/condition_stunned.svg`,
+    icon: `systems/beacon/assets/icons/white/condition_stunned.svg`,
   },
   {
     id: "dangerzone",
     label: "Danger Zone",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/status_dangerzone.svg`,
+    icon: `systems/beacon/assets/icons/white/status_dangerzone.svg`,
   },
   {
     id: "downandout",
     label: "Down and Out",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/status_downandout.svg`,
+    icon: `systems/beacon/assets/icons/white/status_downandout.svg`,
   },
   {
     id: "engaged",
     label: "Engaged",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/status_engaged.svg`,
+    icon: `systems/beacon/assets/icons/white/status_engaged.svg`,
   },
   {
     id: "exposed",
     label: "Exposed",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/status_exposed.svg`,
+    icon: `systems/beacon/assets/icons/white/status_exposed.svg`,
   },
   {
     id: "hidden",
     label: "Hidden",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/status_hidden.svg`,
+    icon: `systems/beacon/assets/icons/white/status_hidden.svg`,
   },
   {
     id: "invisible",
     label: "Invisible",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/status_invisible.svg`,
+    icon: `systems/beacon/assets/icons/white/status_invisible.svg`,
   },
   {
     id: "prone",
     label: "Prone",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/status_prone.svg`,
+    icon: `systems/beacon/assets/icons/white/status_prone.svg`,
   },
   {
     id: "shutdown",
     label: "Shut Down",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/status_shutdown.svg`,
+    icon: `systems/beacon/assets/icons/white/status_shutdown.svg`,
   },
   {
     id: "npc_tier_1",
     label: "Tier 1",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/npc_tier_1.svg`,
+    icon: `systems/beacon/assets/icons/white/npc_tier_1.svg`,
   },
   {
     id: "npc_tier_2",
     label: "Tier 2",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/npc_tier_2.svg`,
+    icon: `systems/beacon/assets/icons/white/npc_tier_2.svg`,
   },
   {
     id: "npc_tier_3",
     label: "Tier 3",
-    icon: `systems/foundryvtt-bcn-experimentation/assets/icons/white/npc_tier_3.svg`,
+    icon: `systems/beacon/assets/icons/white/npc_tier_3.svg`,
   },
 ];
 
@@ -165,10 +165,10 @@ export function WELCOME(changelog: string): string {
 }
 
 // Modify these constants to set which Lancer version numbers need and permit migration.
-export const NEEDS_MAJOR_MIGRATION_VERSION = "0.9.0";
-export const NEEDS_MINOR_MIGRATION_VERSION = "0.9.99";
-export const COMPATIBLE_MIGRATION_VERSION = "0.1.0";
-export const NEEDS_AUTOMATION_MIGRATION_VERSION = "1.0.3";
+export const NEEDS_MAJOR_MIGRATION_VERSION = "0.0.1a";
+export const NEEDS_MINOR_MIGRATION_VERSION = "0.0.1a";
+export const COMPATIBLE_MIGRATION_VERSION = "0.0.1a";
+export const NEEDS_AUTOMATION_MIGRATION_VERSION = "0.0.1a";
 
 export const LANCER = {
   ASCII,
@@ -266,40 +266,40 @@ export function friendly_entrytype_name(type: LancerItemType | LancerActorType, 
 }
 
 // Icons for each document
-export const GENERIC_ITEM_ICON = "systems/foundryvtt-bcn-experimentation/assets/icons/generic_item.svg";
+export const GENERIC_ITEM_ICON = "systems/beacon/assets/icons/generic_item.svg";
 const DOCUMENT_ICONS = {
-  [EntryType.CORE_BONUS]: `systems/foundryvtt-bcn-experimentation/assets/icons/core_bonus.svg`,
-  [EntryType.DEPLOYABLE]: `systems/foundryvtt-bcn-experimentation/assets/icons/deployable.svg`,
-  [EntryType.ENVIRONMENT]: `systems/foundryvtt-bcn-experimentation/assets/icons/orbit.svg`,
-  [EntryType.FACTION]: `systems/foundryvtt-bcn-experimentation/assets/icons/encounter.svg`,
-  [EntryType.FRAME]: `systems/foundryvtt-bcn-experimentation/assets/icons/mech.svg`,
-  [EntryType.LICENSE]: `systems/foundryvtt-bcn-experimentation/assets/icons/license.svg`,
-  [EntryType.MANUFACTURER]: `systems/foundryvtt-bcn-experimentation/assets/icons/manufacturer.svg`,
-  [EntryType.MECH]: `systems/foundryvtt-bcn-experimentation/assets/icons/mech.svg`,
-  [EntryType.MECH_SYSTEM]: `systems/foundryvtt-bcn-experimentation/assets/icons/mech_system.svg`,
-  [EntryType.MECH_WEAPON]: `systems/foundryvtt-bcn-experimentation/assets/icons/mech_weapon.svg`,
-  [EntryType.NPC]: `systems/foundryvtt-bcn-experimentation/assets/icons/npc_class.svg`,
-  [EntryType.NPC_CLASS]: `systems/foundryvtt-bcn-experimentation/assets/icons/npc_class.svg`,
-  [EntryType.NPC_FEATURE]: `systems/foundryvtt-bcn-experimentation/assets/icons/npc_feature.svg`,
-  [EntryType.NPC_FEATURE + NpcFeatureType.Trait]: `systems/foundryvtt-bcn-experimentation/assets/icons/trait.svg`,
-  [EntryType.NPC_FEATURE + NpcFeatureType.Reaction]: `systems/foundryvtt-bcn-experimentation/assets/icons/reaction.svg`,
-  [EntryType.NPC_FEATURE + NpcFeatureType.System]: `systems/foundryvtt-bcn-experimentation/assets/icons/system.svg`,
-  [EntryType.NPC_FEATURE + NpcFeatureType.Weapon]: `systems/foundryvtt-bcn-experimentation/assets/icons/weapon.svg`,
-  [EntryType.NPC_FEATURE + NpcFeatureType.Tech]: `systems/foundryvtt-bcn-experimentation/assets/icons/tech_full.svg`,
-  [EntryType.NPC_TEMPLATE]: `systems/foundryvtt-bcn-experimentation/assets/icons/npc_template.svg`,
-  [EntryType.ORGANIZATION]: `systems/foundryvtt-bcn-experimentation/assets/icons/encounter.svg`,
-  [EntryType.PILOT]: `systems/foundryvtt-bcn-experimentation/assets/icons/pilot.svg`,
-  [EntryType.PILOT_ARMOR]: `systems/foundryvtt-bcn-experimentation/assets/icons/role_tank.svg`,
-  [EntryType.PILOT_GEAR]: `systems/foundryvtt-bcn-experimentation/assets/icons/generic_item.svg`,
-  [EntryType.PILOT_WEAPON]: `systems/foundryvtt-bcn-experimentation/assets/icons/role_artillery.svg`,
-  [EntryType.QUIRK]: `systems/foundryvtt-bcn-experimentation/assets/icons/trait.svg`,
-  [EntryType.RESERVE]: `systems/foundryvtt-bcn-experimentation/assets/icons/reserve_tac.svg`,
-  [EntryType.SITREP]: `systems/foundryvtt-bcn-experimentation/assets/icons/compendium.svg`,
-  [EntryType.SKILL]: `systems/foundryvtt-bcn-experimentation/assets/icons/skill.svg`,
-  [EntryType.STATUS]: `systems/foundryvtt-bcn-experimentation/assets/icons/reticule.svg`,
-  [EntryType.TAG]: `systems/foundryvtt-bcn-experimentation/assets/icons/tag.svg`,
-  [EntryType.TALENT]: `systems/foundryvtt-bcn-experimentation/assets/icons/talent.svg`,
-  [EntryType.WEAPON_MOD]: `systems/foundryvtt-bcn-experimentation/assets/icons/weapon_mod.svg`,
+  [EntryType.CORE_BONUS]: `systems/beacon/assets/icons/core_bonus.svg`,
+  [EntryType.DEPLOYABLE]: `systems/beacon/assets/icons/deployable.svg`,
+  [EntryType.ENVIRONMENT]: `systems/beacon/assets/icons/orbit.svg`,
+  [EntryType.FACTION]: `systems/beacon/assets/icons/encounter.svg`,
+  [EntryType.FRAME]: `systems/beacon/assets/icons/mech.svg`,
+  [EntryType.LICENSE]: `systems/beacon/assets/icons/license.svg`,
+  [EntryType.MANUFACTURER]: `systems/beacon/assets/icons/manufacturer.svg`,
+  [EntryType.MECH]: `systems/beacon/assets/icons/mech.svg`,
+  [EntryType.MECH_SYSTEM]: `systems/beacon/assets/icons/mech_system.svg`,
+  [EntryType.MECH_WEAPON]: `systems/beacon/assets/icons/mech_weapon.svg`,
+  [EntryType.NPC]: `systems/beacon/assets/icons/npc_class.svg`,
+  [EntryType.NPC_CLASS]: `systems/beacon/assets/icons/npc_class.svg`,
+  [EntryType.NPC_FEATURE]: `systems/beacon/assets/icons/npc_feature.svg`,
+  [EntryType.NPC_FEATURE + NpcFeatureType.Trait]: `systems/beacon/assets/icons/trait.svg`,
+  [EntryType.NPC_FEATURE + NpcFeatureType.Reaction]: `systems/beacon/assets/icons/reaction.svg`,
+  [EntryType.NPC_FEATURE + NpcFeatureType.System]: `systems/beacon/assets/icons/system.svg`,
+  [EntryType.NPC_FEATURE + NpcFeatureType.Weapon]: `systems/beacon/assets/icons/weapon.svg`,
+  [EntryType.NPC_FEATURE + NpcFeatureType.Tech]: `systems/beacon/assets/icons/tech_full.svg`,
+  [EntryType.NPC_TEMPLATE]: `systems/beacon/assets/icons/npc_template.svg`,
+  [EntryType.ORGANIZATION]: `systems/beacon/assets/icons/encounter.svg`,
+  [EntryType.PILOT]: `systems/beacon/assets/icons/pilot.svg`,
+  [EntryType.PILOT_ARMOR]: `systems/beacon/assets/icons/role_tank.svg`,
+  [EntryType.PILOT_GEAR]: `systems/beacon/assets/icons/generic_item.svg`,
+  [EntryType.PILOT_WEAPON]: `systems/beacon/assets/icons/role_artillery.svg`,
+  [EntryType.QUIRK]: `systems/beacon/assets/icons/trait.svg`,
+  [EntryType.RESERVE]: `systems/beacon/assets/icons/reserve_tac.svg`,
+  [EntryType.SITREP]: `systems/beacon/assets/icons/compendium.svg`,
+  [EntryType.SKILL]: `systems/beacon/assets/icons/skill.svg`,
+  [EntryType.STATUS]: `systems/beacon/assets/icons/reticule.svg`,
+  [EntryType.TAG]: `systems/beacon/assets/icons/tag.svg`,
+  [EntryType.TALENT]: `systems/beacon/assets/icons/talent.svg`,
+  [EntryType.WEAPON_MOD]: `systems/beacon/assets/icons/weapon_mod.svg`,
   generic: GENERIC_ITEM_ICON,
 };
 

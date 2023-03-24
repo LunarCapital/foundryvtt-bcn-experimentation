@@ -13,11 +13,11 @@ declare global {
 
   namespace Game {
     interface SystemData<T> {
-      id: "lancer";
+      id: "beacon";
     }
   }
   interface Game {
-    lancer: {
+    beacon: {
       [x: string]: unknown;
     };
     action_manager?: LancerActionManager;
@@ -29,27 +29,27 @@ declare global {
 
   namespace ClientSettings {
     interface Values {
-      "lancer.systemMigrationVersion": string;
-      "lancer.coreDataVersion": string;
-      "lancer.installedLCPs": {
+      "beacon.systemMigrationVersion": string;
+      "beacon.coreDataVersion": string;
+      "beacon.installedLCPs": {
         index: IContentPackManifest[];
       };
-      "lancer.keepStockIcons": boolean;
-      "lancer.hideWelcome": boolean;
-      "lancer.automationOptions": Partial<AutomationOptions>;
-      "lancer.automationSwitch": boolean;
-      "lancer.attackSwitch": boolean;
-      "lancer.actionManager": boolean;
-      "lancer.actionManagerPlayersUse": boolean;
-      "lancer.autoOCHeat": boolean;
-      "lancer.autoOKillHeat": boolean;
-      "lancer.autoCalcStructure": boolean;
-      "lancer.squareGridDiagonals": "111" | "121" | "222" | "euc";
-      // "lancer.warningFor120": boolean; // Old setting, currently unused.
-      // "lancer.warningForBeta": boolean; // Old setting, currently unused.
-      "lancer.combatTrackerConfig": { sortTracker: boolean } | ClientSettings.Values["lancer.combatTrackerConfig"];
-      "lancer.dsnSetup": boolean;
-      "lancer.combat-tracker-appearance": Partial<LancerInitiativeConfig["def_appearance"]>;
+      "beacon.keepStockIcons": boolean;
+      "beacon.hideWelcome": boolean;
+      "beacon.automationOptions": Partial<AutomationOptions>;
+      "beacon.automationSwitch": boolean;
+      "beacon.attackSwitch": boolean;
+      "beacon.actionManager": boolean;
+      "beacon.actionManagerPlayersUse": boolean;
+      "beacon.autoOCHeat": boolean;
+      "beacon.autoOKillHeat": boolean;
+      "beacon.autoCalcStructure": boolean;
+      "beacon.squareGridDiagonals": "111" | "121" | "222" | "euc";
+      // "beacon.warningFor120": boolean; // Old setting, currently unused.
+      // "beacon.warningForBeta": boolean; // Old setting, currently unused.
+      "beacon.combatTrackerConfig": { sortTracker: boolean } | ClientSettings.Values["beacon.combatTrackerConfig"];
+      "beacon.dsnSetup": boolean;
+      "beacon.combat-tracker-appearance": Partial<LancerInitiativeConfig["def_appearance"]>;
     }
   }
 }

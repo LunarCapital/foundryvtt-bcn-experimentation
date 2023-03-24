@@ -8,7 +8,7 @@
           name="name"
           type="text"
           value="{{actor.name}}"
-          placeholder="{{localize "lancer.placeholder.name"}}"
+          placeholder="{{localize "beacon.placeholder.name"}}"
         />
       </h1>
     </div>
@@ -17,8 +17,8 @@
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="lancer-tabs" data-group="primary">
-    <a class="item lancer-tab medium" data-tab="status">{{localize "lancer.deployable-sheet.tabs.status"}}</a>
-    <a class="item lancer-tab medium" data-tab="config">{{localize "lancer.deployable-sheet.tabs.config"}}</a>
+    <a class="item lancer-tab medium" data-tab="status">{{localize "beacon.deployable-sheet.tabs.status"}}</a>
+    <a class="item lancer-tab medium" data-tab="config">{{localize "beacon.deployable-sheet.tabs.config"}}</a>
     <!--<a class="item lancer-tab medium" data-tab="mech">&lt;FRAME//LOADOUT&gt;</a>-->
   </nav>
 
@@ -47,7 +47,7 @@
 
         <div class="card clipped full">
           <div class="lancer-header major">
-            {{localize "lancer.deployable-sheet.deployer.label"}}
+            {{localize "beacon.deployable-sheet.deployer.label"}}
           </div>
           {{{deployer-slot "mm.Deployer" }}}
         </div>
@@ -64,7 +64,7 @@
     <div class="tab manage flexcol" data-group="primary" data-tab="config">
       {{!-- Frame Stats --}}
       <div class="card clipped" style="text-align: left;">
-        <span class="lancer-header major" style="text-align: center;">{{localize "lancer.deployable-sheet.stats.label"}}</span>
+        <span class="lancer-header major" style="text-align: center;">{{localize "beacon.deployable-sheet.stats.label"}}</span>
         <div class="card clipped wraprow quadruple">
           <div class="wraprow quadruple">
             {{{clicker-stat-card "MAX HP" "mdi mdi-heart-outline" "mm.BaseMaxHP" false }}}
